@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Interactive Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton&display=swap">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #message {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #message p {
+      color: #555;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    /* Apply unique font to letter "c" */
+    #message p span {
+      font-family: 'Monoton', cursive; /* Change font to Monoton */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Unlock your Quiz..</h1>
+
+  <button onclick="displayMessage()">Click Me!</button>
+
+  <div id="message">
+<p>I bring pictures to <span>l</span>ife , but I'm not a painter .</p>
+    <p>Who am I?</p>
+  </div>
+
+  <script>
+    function displayMessage() {
+      var messageDiv = document.getElementById("message");
+      messageDiv.style.display = "block"; // Show the message
+    }
+  </script>
+
+</body>
+</html>
